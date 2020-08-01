@@ -1,0 +1,79 @@
+.grid-container {
+  display: inline-block;
+  background-color: #bbada0;
+  padding: 10px;
+  position: relative;
+}
+
+.grid-row {
+  margin-bottom: 6px;
+}
+
+.grid-row:last-of-type {
+  margin: 0;
+}
+
+.grid-cell {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  background-color: rgba(238, 228, 218, 0.35);
+}
+
+.grid-cell:last-of-type {
+  margin: 0;
+}
+
+.item {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 10px;
+  left: 10px;
+  background-color: brown;
+  animation: newItem .3s;
+  transition: left .1s, top .1s;
+}
+
+.item-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+}
+
+@keyframes newItem {
+  0% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.overlay-text {
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.new-game-button {
+  margin: 0 20px;
+}
