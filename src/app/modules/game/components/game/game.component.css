@@ -34,6 +34,7 @@
   background-color: brown;
   animation: newItem .3s;
   transition: left .1s, top .1s;
+  font-size: 50px;
 }
 
 .item-title {
@@ -41,7 +42,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 50px;
   color: white;
 }
 

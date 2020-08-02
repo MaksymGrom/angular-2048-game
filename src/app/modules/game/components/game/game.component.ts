@@ -41,7 +41,8 @@ export class GameComponent implements OnInit {
     return {
       top,
       left,
-      'background-color': colorMap[item.value] || 'black'
+      'background-color': colorMap[item.value] || 'black',
+      'font-size': item.value >= 10000 ? '30px' : '50px'
     };
   }
 
